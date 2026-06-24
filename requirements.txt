@@ -1,0 +1,4 @@
+pandas
+python-dotenv
+label-studio
+label-studio-sdk
