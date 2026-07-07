@@ -11,9 +11,9 @@ load_dotenv()
 LABEL_STUDIO_URL = os.getenv('LABEL_STUDIO_URL', 'http://localhost:8080')
 LABEL_STUDIO_API_KEY = os.getenv('LABEL_STUDIO_API_KEY')
 
-INPUT_FILE = 'voting_results_v2.csv'
-PROJECT_TITLE_MAJORITY = 'Pilot R2 D2E Review (Majority)'
-PROJECT_TITLE_NO_MAJORITY = 'Pilot R2 D2E Review (No Majority)'
+INPUT_FILE = 'dev/PhucThinh_voting_dev.csv'
+PROJECT_TITLE_MAJORITY = 'Dev set Review (Majority)'
+PROJECT_TITLE_NO_MAJORITY = 'Dev set Review (No Majority)'
 
 # ============================================================
 # Labeling Config - MAJORITY TASKS
@@ -147,8 +147,8 @@ def build_tasks(df, is_majority):
         winner = row['winner'] if pd.notna(row['winner']) and row['winner'] != '' else None
         
         task_data = {
-            'original_index': int(row['original_index']),
-            'split_source': row['split_source'],
+            'original_id': int(row['original_id']),
+            # 'split_source': row['split_source'],
             'standard': row['standard'],
             'candidate_a': row['A'],
             'candidate_b': row['B'],
