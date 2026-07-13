@@ -11,9 +11,9 @@ load_dotenv()
 LABEL_STUDIO_URL = os.getenv('LABEL_STUDIO_URL', 'http://localhost:8080')
 LABEL_STUDIO_API_KEY = os.getenv('LABEL_STUDIO_API_KEY')
 
-INPUT_FILE = 'dev/PhucThinh_voting_dev.csv'
-PROJECT_TITLE_MAJORITY = 'Dev set Review (Majority)'
-PROJECT_TITLE_NO_MAJORITY = 'Dev set Review (No Majority)'
+INPUT_FILE = 'test/TenCuaBan_voting_test.csv'
+PROJECT_TITLE_MAJORITY = 'Test set Review (Majority)'
+PROJECT_TITLE_NO_MAJORITY = 'Test set Review (No Majority)'
 
 # ============================================================
 # Labeling Config - MAJORITY TASKS
