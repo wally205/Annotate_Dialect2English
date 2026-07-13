@@ -25,7 +25,11 @@ LABEL_STUDIO_API_KEY=<paste-token-here>
 2. Mở file `setup_label_studio.py`.
 3. Tìm biến `INPUT_FILE` (khoảng dòng 14) và thay đổi đường dẫn tới file CSV được phân công cho bạn. Ví dụ:
    ```python
-   INPUT_FILE = 'dev/TenCuaBan_voting_dev.csv'
+   INPUT_FILE = 'dev/TenCuaBan_voting_dev.csv' 
+   ```
+   hoặc
+   ```python
+   INPUT_FILE = 'test/TenCuaBan_voting_test.csv' 
    ```
 4. Chạy script để tạo project:
    ```bash
